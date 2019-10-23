@@ -8,13 +8,8 @@ class App extends React.Component{
   constructor(props){
     
     super(props);
-    this.state = {currentCount: 1};
-
-  }
-
-  propriet(prop){
-
-    this.props = 1;
+    this.state = {currentCount: 1,
+    outrav: 2}; //pode colocar qualque quantidade de variavel nos props e states
 
   }
 
@@ -22,6 +17,7 @@ class App extends React.Component{
     
 
     this.setState({currentCount: this.state.currentCount - 1 })
+    this.setState({outrav: this.state.outrav - 2})
     
   }
   
@@ -29,6 +25,7 @@ class App extends React.Component{
     
 
     this.setState({currentCount: this.state.currentCount + 1 })
+    this.setState({outrav: this.state.outrav + 2})
     
   }
 
@@ -41,6 +38,7 @@ class App extends React.Component{
         <button onClick={() => this.handleIncrement()} >+ </button>
         <button onClick={() => this.handleDecrement()}>-</button>
         <Display  currentCount={this.state.currentCount} />
+        <Display  currentCount={this.state.outrav} />
       </div>
 
     );
