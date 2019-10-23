@@ -8,8 +8,10 @@ class App extends React.Component{
   constructor(props){
     
     super(props);
-    this.state = {currentCount: 1,
-    outrav: 2}; //pode colocar qualque quantidade de variavel nos props e states
+      this.state = {
+        currentCount: 1,
+        outrav: 2
+      }; //pode colocar qualque quantidade de variavel nos props e states
 
   }
 
